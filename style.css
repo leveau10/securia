@@ -1,6 +1,7 @@
+
 .container-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgba(69,61,57,255);
     height: 250px;
 }
@@ -13,10 +14,6 @@
     margin: 7% 10%;
     width: 100px;
     border-width: 3px;
-}
-
-.logo-header{
-    margin-left: 10%;
 }
 
 main{
@@ -89,12 +86,13 @@ h1{
 .submit-button{ 
     background-color: rgb(53, 46, 40);
     color: white;
+    font-size: 18px;
+    font-weight: bold;
     border-width: 3PX;
     border-color: rgb(247, 110, 1);;
 }
 
-
-
-
-
-
+.container-selec-submit p{
+    text-align: center;
+    font-size: 14px;
+}
