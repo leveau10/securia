@@ -1,98 +1,108 @@
+.app{
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+    grid-template-columns: 100vw;
+    grid-template-rows: 200px auto auto;
+    background: rgba(69,61,57,255);
+    /*3 areas to work: header, main and footer*/
+}
 
-.container-header{
+.header{
     display: flex;
+    grid-area: header;
+    background: rgba(69,61,57,255);
     justify-content: space-evenly;
-    background-color: rgba(69,61,57,255);
-    height: 250px;
+    margin: 0 10%;
+    border-bottom: solid 1px rgb(247, 110, 1);
+    /*flex and space evenly with 5% margin*/
 }
 
 .login{
-    background-color: rgba(69,61,57,255);
-    color: white;
-    border-color: rgb(247, 110, 1);
-    border-radius: 7px;
-    margin: 7% 10%;
-    width: 100px;
-    border-width: 3px;
+    padding: 0 2rem;
+    margin: 4.5rem 0;
+    background: rgba(69,61,57,255);
+    border: 3px solid rgb(247, 110, 1);
+    border-radius: 3px;
+    color: azure;
+    /*login button*/
 }
 
-main{
-    background-color: rgba(69,61,57,255);
+.main{
+    grid-area: main;
     display: flex;
     flex-direction: column;
-}
-
-.container-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 10% 0 10%;
-    height: 100px;
     align-items: center;
-    
+    margin-top: 1.5rem;
+
 }
 
-h1{
-    font-size: 37px;
+.main__title{
+    font-size: 2rem;
     font-weight: bold;
+    text-align: center;
+
 }
 
-.container-main p{
-    margin-top: 40px;
-    font-size: 20px;
+.main__p{
+    margin-top: 1rem;
+    font-size: 1.15rem;
+    text-align: center;
 }
 
 .container-form{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    margin: 0 15%;
-    height: 350px;
-}
-.container-inputs{
-    display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    width: 100%;
-   
+    align-items: center;
+    margin: 1.5rem 35%;
     
 }
 
-.container-inputs-one{
-    margin-top: 20px;
+.container-inputs{
     display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
 }
 
-.container-inputs-two{
+.form-inputs{
+    margin: .5rem .1rem;
+    width: 37%;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.container-select-submit{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.container-inputs input{
-    padding: 20px;
-    margin: 10px;
-    border-radius: 7px;
-    border: unset;
+#hear-selector{
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    margin: .5rem 0;
+
 }
 
-#hear-selector, .submit-button{
-    padding: 20px;
-    margin: 10px;
-    width: 96%;
-    border-radius: 7px;
+.submit-button{
+    width: 100%;
+    padding: 1.2rem;
+    margin: .5rem 0;
+    border-radius: 10px;
+    border: 3px solid rgb(247, 110, 1);
+    background: rgba(69,61,57,255);
+    color: azure;
+    font-size: 1.1rem;
 }
-
-.submit-button{ 
-    background-color: rgb(53, 46, 40);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-width: 3PX;
-    border-color: rgb(247, 110, 1);;
-}
-
-.container-selec-submit p{
-    text-align: center;
-    font-size: 14px;
+.footer{
+    grid-area: footer;
 }
