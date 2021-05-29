@@ -106,3 +106,25 @@
 .footer{
     grid-area: footer;
 }
+
+@media screen and (max-width: 1150px) {
+    .container-form{
+        margin: 0 30%;
+}
+
+@media screen and (max-width: 850px){
+    .container-form{
+        margin: 0 20%;
+    }
+    .form-inputs{      
+}
+
+
+@media screen and (max-width: 550px){
+    .main__title{
+        margin: 0 3%
+    }
+    .container-form{
+        margin: 0 10%;
+    }
+}
